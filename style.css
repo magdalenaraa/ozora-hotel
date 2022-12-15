@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap'); 
+
+.font-noto {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+}
+
+.navbar {
+    width: 100%;
+    background: #ff7c00;
+    height: 80px;
+    z-index: 10;
+    text-align: center;
+    box-shadow: -1px 9px 19px 0px rgba(114,90,120,0.75);
+    
+  }
+
+.navbar ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    width: 250px;
+    font-size: 25x;
+    font-weight: bold;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+  
+.navbar a::before,
+.navbar a::after {
+   content: '';
+    position: absolute;
+    width: 90%;
+    left: 0;
+  }
+.navbar a::before {
+    background-color: #140026;
+    height: 3px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+.navbar a::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #140026;
+  }
+  
+.navbar a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+.navbar a:hover::after {
+    transform: translate3d(0, 0, 0);
+  }
+  
+.navbar a span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  a:hover span {
+    transform: translate3d(-200%, 0, 0);
+  }
+
+.top {
+    width: 100%; 
+    background-image: url(./img/top-aki-haru.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 1250px;
+    position: relative;
+    display: block;
+}
+.top img {
+    width: 100%;
+    position: absolute;
+    bottom: -500px;
+}
+
+#second {
+    width: 100%; 
+    background-image: url(./img/sec-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 1800px;
+    position: relative;
+    display: block;
+    top: 500px;
+}
+
+.leaves img {
+    position: absolute;
+    top: -150px;
+    width: 100%;
+}
+
+
+
