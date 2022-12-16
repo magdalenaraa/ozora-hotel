@@ -41,7 +41,7 @@ body {
     text-decoration: none;
     color: #fff;
     width: 250px;
-    font-size: 25x;
+    font-size: 18px;
     font-weight: bold;
     font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
@@ -116,7 +116,8 @@ body {
     background-repeat: no-repeat;
     min-height: 1800px;
     position: relative;
-    display: block;
+    display: inline-block;
+    justify-content: center;
     top: 500px;
 }
 
@@ -126,5 +127,37 @@ body {
     width: 100%;
 }
 
+.title img {
+  position: absolute;
+  padding-top: 150px;
+  margin-left: 160px;
+}
 
+.swiper {
+  width: 80%;
+  height: 80%;
+  top: 400px;
+}
 
+.swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

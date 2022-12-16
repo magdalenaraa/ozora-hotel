@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ozora Hotel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -26,6 +27,44 @@
         <div class="title">
             <img src="./img/title-sec.png" width="1000" height="auto">
         </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/sec-slider-assets/01-family.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/sec-slider-assets/02-family.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/sec-slider-assets/03-family.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/sec-slider-assets/04-family.jpg">
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/sec-slider-assets/05-family.jpg">
+              </div>
+            </div>
+            <div class="swiper-button-next">
+                <img src="./img/sec-slider-assets/next-button.png" width="100" height="auto">
+            </div>
+            <div class="swiper-button-prev">
+                <img src="./img/sec-slider-assets/prev-button.png" width="100" height="auto">
+            </div>
+        </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        loop: true,
+      });
+    </script>
 </body>
 </html>
