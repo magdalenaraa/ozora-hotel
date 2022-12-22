@@ -231,9 +231,9 @@
   }
 
   .coupon-third img {
-    top: 1740px;
+    top: 1780px;
     position: absolute;
-    margin-left: 55px;
+    margin-left: 150px;
   }
 
   .coupon-third img:hover, .coupon-third img:focus, .coupon-third img:active {
