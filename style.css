@@ -100,7 +100,6 @@
   .top {
     width: 100%; 
     background-image: url(./img/top-aki-haru.jpg);
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 1250px;
@@ -116,7 +115,6 @@
   #second {
     width: 100%; 
     background-image: url(./img/sec-bg.png);
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 1680px;
@@ -126,22 +124,22 @@
     top: 500px;
   }
 
-  .leaves img {
+  .leaves {
     position: absolute;
-    top: -150px;
+    top: -180px;
     width: 100%;
   }
 
-  .title img {
+  .title {
     position: absolute;
-    padding-top: 150px;
-    margin-left: 160px;
+    padding-top: 200px;
+    margin-left: 180px;
   }
 
   .swiper {
-    width: 80%;
-    height: 80%;
-    top: 400px;
+    width: 70%;
+    height: 70%;
+    top: 500px;
   }
 
   .swiper-slide {
@@ -171,6 +169,24 @@
     margin-left: 20px;
   }
 
+  .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 60px;
+    left: auto;
+  }
+
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  display: none;
+  }
+
+  .swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 60px;
+    right: auto;
+  }
+
+  .swiper-button-prev::after, .swiper-rtl .swiper-button-next::after {
+    display: none;
+  }
+
   .coupon-sec {
     position: absolute;
     top: 1300px;
@@ -193,7 +209,6 @@
   #third {
     width: 100%;
     background: url(./img/bg-third.png);
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 2180px;
@@ -205,12 +220,12 @@
   .third-title img {
     position: absolute;
     padding-top: 260px;
-    margin-left: 270px;
+    margin-left: 200px;
   }
 
   .third-img {
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 50%;
     top: 500px;
     margin-left: 80px;
     position: absolute;
@@ -241,6 +256,63 @@
     transform: scale(1.1);
     filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.70));
   }
+
+  #fourth {
+    width: 100%;
+    background: url(./img/fourth-assets/f-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 2180px;
+    position: relative;
+    display: inline-block;
+    top: 480px;
+  }
+
+  .fourth-title {
+    position: absolute;
+    padding-top: 150px;
+    margin-left: 270px;
+  }
+
+  #fourth .swiper {
+    width: 60%;
+    height: 60%;
+  }
+
+  #fourth .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  #fourth .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0,0,0);
+    z-index: 10;
+}
 }
 
 
