@@ -220,14 +220,14 @@
   .third-title img {
     position: absolute;
     padding-top: 260px;
-    margin-left: 200px;
+    margin-left: 260px;
   }
 
   .third-img {
     width: 50%;
     height: 50%;
-    top: 500px;
-    margin-left: 80px;
+    top: 550px;
+    margin-left: 160px;
     position: absolute;
   }
 
@@ -270,13 +270,14 @@
 
   .fourth-title {
     position: absolute;
-    padding-top: 150px;
+    padding-top: 120px;
     margin-left: 270px;
   }
 
   #fourth .swiper {
     width: 60%;
     height: 60%;
+    top: 450px;
   }
 
   #fourth .swiper-slide {
@@ -312,7 +313,28 @@
     transition: .3s opacity;
     transform: translate3d(0,0,0);
     z-index: 10;
-}
+  }
+
+  .desc-box {
+    padding-top: 550px;
+  }
+
+  .fourth-desc {
+    position: absolute;
+    top: 1200px;
+    z-index: 10;
+    text-align: center;
+    padding: 60px;
+    line-height: 40px;
+  }
+
+  .fourth-coupons {
+    padding: 50px;
+    align-items: center;
+  }
+
+  .coupon-1-button {
+  }
 }
 
 
