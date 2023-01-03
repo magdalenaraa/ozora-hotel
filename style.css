@@ -28,7 +28,12 @@
     z-index: 10;
     text-align: center;
     box-shadow: -1px 9px 19px 0px rgba(114,90,120,0.75);
-    
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-scrolled {
+    background-color: #ff7b00;
   }
 
   .navbar ul {
@@ -45,8 +50,8 @@
   .navbar a {
     text-decoration: none;
     color: #fff;
-    width: 250px;
-    font-size: 18px;
+    width: 300px;
+    font-size: 20px;
     font-weight: bold;
     font-family: 'Noto Sans JP', sans-serif;
     text-align: center;
@@ -109,7 +114,7 @@
   .top img {
     width: 100%;
     position: absolute;
-    bottom: -500px;
+    bottom: -1000px;
   }
 
   #second {
@@ -121,23 +126,23 @@
     position: relative;
     display: inline-block;
     justify-content: center;
-    top: 500px;
+    top: 900px;
   }
 
   .leaves {
     position: absolute;
-    top: -180px;
+    top: -200px;
     width: 100%;
   }
 
   .title {
     position: absolute;
-    padding-top: 200px;
-    margin-left: 180px;
+    padding-top: 220px;
+    margin-left: 450px;
   }
 
   .swiper {
-    width: 70%;
+    width: 50%;
     height: 70%;
     top: 500px;
   }
@@ -192,7 +197,7 @@
     top: 1300px;
     display: flex;
     justify-content: space-around;
-    margin-left: 70px;
+    margin-left: 350px;
   }
 
   .coupon-1:hover, .coupon-1:focus, .coupon-1:active {
@@ -214,20 +219,20 @@
     min-height: 2180px;
     position: relative;
     display: inline-block;
-    top: 490px;
+    top: 840px;
   }
 
   .third-title img {
     position: absolute;
     padding-top: 260px;
-    margin-left: 200px;
+    margin-left: 550px;
   }
 
   .third-img {
     width: 50%;
     height: 50%;
-    top: 500px;
-    margin-left: 80px;
+    top: 550px;
+    margin-left: 450px;
     position: absolute;
   }
 
@@ -248,7 +253,7 @@
   .coupon-third img {
     top: 1780px;
     position: absolute;
-    margin-left: 150px;
+    margin-left: 450px;
   }
 
   .coupon-third img:hover, .coupon-third img:focus, .coupon-third img:active {
@@ -262,21 +267,21 @@
     background: url(./img/fourth-assets/f-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 2180px;
+    min-height: 2700px;
     position: relative;
     display: inline-block;
-    top: 480px;
+    top: 825px;
   }
 
   .fourth-title {
     position: absolute;
     padding-top: 150px;
-    margin-left: 270px;
+    margin-left: 550px;
   }
 
   #fourth .swiper {
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
   }
 
   #fourth .swiper-slide {
@@ -312,7 +317,89 @@
     transition: .3s opacity;
     transform: translate3d(0,0,0);
     z-index: 10;
-}
+  }
+  
+  .fourth-coupons {
+    position: absolute;
+    top: 1800px;
+    margin-left: 200px;
+  }
+  
+  .ghost {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    animation: float 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite alternate;
+  }
+
+  @keyframes float{
+    0%{
+      transform: translateZ(20px);
+    }
+    100%{
+      transform: translateY(-25px) translateX(-10px) translateZ(30px);
+    }
+  }
+  
+  .spider-web {
+    position: absolute;
+    top: 1px;
+  }
+  
+  .desc-box {
+    position: absolute;
+    top: 1320px;
+  }
+  .fourth-desc {
+    top: 1350px;
+    position: absolute;
+    text-align: center;
+    padding: 85px;
+    line-height: 40px;
+    z-index: 5;
+  }
+
+  .decor-right {
+    position: absolute;
+    right: 70px;
+    top: 650px;
+  }
+  .decor-left {
+    position: absolute;
+    left: 50px;
+    top: 500px;
+  }
+  
+  .coupon-1-button {
+    position: relative;
+    bottom: 120px;
+    left: 1100px;
+    z-index: 5;
+  }
+  .coupon-2-button {
+    position: relative;
+    bottom: 120px;
+    left: 80px;
+    z-index: 5;
+  }
+
+  #fifth {
+    width: 100%;
+    background: url(./img/bg-fifth.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 2700px;
+    position: relative;
+    display: inline-block;
+    top: 820px;
+  }
+
+  .fifth-title {
+    position: absolute;
+    padding-top: 350px;
+    margin-left: 550px;
+  }
+  
 }
 
 
