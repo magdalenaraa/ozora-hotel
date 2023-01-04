@@ -89,7 +89,7 @@
       <div class="fourth-title">
         <img src="./img/fourth-assets/fourth-title.png"  width="800" height="auto">
       </div>
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper2">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./img/fourth-assets/fourth-slider-assets/first-slider.jpg">
@@ -107,7 +107,7 @@
             <img src="./img/fourth-assets/fourth-slider-assets/fifth slider.jpg">
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination2"></div>
       </div>
       <div class="fourth-desc">
         <p>
@@ -154,7 +154,7 @@
       <div class="fifth-title">
         <img src="./img/fifth-title.png" width="800" height="auto">
       </div>
-      <div class="swiper mySwiper">
+      <div class="swiper mySwiper3">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./img/fifth-slider-assets/fifth-1.jpg">
@@ -164,10 +164,7 @@
           </div>
           <div class="swiper-slide">
             <img src="./img/fifth-slider-assets/fifth-3.jpg">
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/fifth-slider-assets/fifth-3.jpg">
-          </div>
+          </div> 
           <div class="swiper-slide">
             <img src="./img/fifth-slider-assets/fifth-4.jpg">
           </div>
@@ -178,7 +175,35 @@
             <img src="./img/fifth-slider-assets/fifth-6.jpg">
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination3"></div>
+      </div>
+      <div class="desc-box-fifth">
+        <img src="./img/fifth-assets/desc-box-fifth.png" width="2000" height="400">
+     
+      </div>   
+      
+      <div class="fifth-desc">
+        <div class="fifth-desc1">
+          <p>
+            パフォーマンスキッチンでシェフが目の前で仕上げる特製料理が盛りだくさん。ハンバーガーや、
+            お好みの具材を選べるオムレツもシェフが目の前で焼き上げます。
+          </p>
+        </div>
+        <div class="fifth-desc2">
+          <p>
+            また、お子様に好評のメニューをそろえたキッズブッフェコーナーもあり、ご家族みなさまでお楽しみいただけます。
+          </p>
+        </div>
+      </div>
+      <div class="fifth-button">
+        <img src="./img/fifth-assets/button-fifth.png">
+      </div>
+      <div class="fifth-button-desc">
+        <img src="./img/fifth-assets/button-desc-fifth.png">
+      </div>
+    </div>
+    <div id="sixth">
+      <div class="pumpkins">
       </div>
     </div>
 
@@ -197,13 +222,32 @@
     
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-     <!-- Initialize Swiper -->
-     <script>
-       var swiper = new Swiper(".mySwiper", {
-         pagination: {
-           el: ".swiper-pagination",
-         },
-       });
-     </script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper2", {
+        pagination: {
+          el: ".swiper-pagination2",
+          dynamicBullets: true,
+        },
+        autoplay: {
+        delay: 3000,
+      }
+      });
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper3", {
+    pagination: {
+      el: ".swiper-pagination3",
+      dynamicBullets: true,
+    },
+    autoplay: {
+        delay: 3000,
+    }
+  });
+</script>
 </body>
 </html>
