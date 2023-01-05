@@ -406,7 +406,7 @@
     background: url(./img/bg-fifth.png);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 2700px;
+    min-height: 2800px;
     position: relative;
     display: inline-block;
     top: 820px;
@@ -464,8 +464,59 @@
     z-index: 5;
     top: 1400px;
   }
+
+  .fifth-button {
+    position: absolute;
+    top: 1770px;
+    margin-left: 340px;
+  }
+
+  .fifth-button img:hover, .fifth-button img:focus, .fifth-button img:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    filter: drop-shadow(0 20px 20px rgba(0, 0, 0, 0.397));
+  }
+
+  .fifth-button-desc {
+    position: absolute;
+    top: 2100px;
+    margin-left: 340px;
+  }
+
+  #sixth {
+    width: 100%;
+    background: url(./img/sixth-assets/sixth-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 1485px;
+    position: relative;
+    display: inline-block;
+    top: 820px;
+  }
+  
+  .pumpkins {
+    position: absolute;
+    top: -300px;
+    width: 100%;
+  }
+
+  .sixth-main-button {
+    position: absolute;
+    padding-top: 350px;
+    margin-left: 500px;
+  }
+
+  .sixth-desc p {
+    position: absolute;
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+    top: 600px;
+    color: #140026;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: #fff;
+    font-weight: 900;
+  }
+
+  
 }
-
-
-
-
